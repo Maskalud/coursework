@@ -29,39 +29,46 @@ body{
 .logo {
     width: 10%;
 }
-.pages{
-    width: 70%;
-    display: flex;
+.menu{
+    width: 90%;
 }
-.link , .link_active {
- margin: 1%;
- width: 25%;
- text-align: center;
+.menu li {
+	list-style-type: none;
+    width: 17.5%;
 }
-.account{
-    width: 17%;
-    height: 43px;
-    padding: 0 0 0 0.5%;
+.menu li a{
+    text-decoration: none;
+    color: #EBC781;
+    font-size: 24px;
+
+}
+.menu1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.account{
+    display: flex;
     font-size: 20px;
-    background-color: #EBC781;
-    
+    background: #EBC781;
+    width: 17%;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
 }
-.account_link {
- margin: 0 5% 0 0;
+.account li a{
+    font-size: 20px;
+    color: black;
+    margin: 0 5px 0 5px;
 }
-.link a, .link_active a, .account_link a{
-    text-decoration: none;
+.account li a:hover{
+    color: #FF6B00;
 }
-.link a{color:#EBC781;}
-.link_active a{color: #FF6B00;}
-.account_link a{color: #000;}
-.personal_account{
-    width: 3%;
-    margin: 0 0 0 1%;   
-}
+
+
+
+
+
 .line{
     width: 100%;
     height: 4px;
