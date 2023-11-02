@@ -30,40 +30,52 @@ body{
     width: 10%;
 }
 .menu{
-    width: 90%;
+    width: 87%;
 }
 .menu li {
 	list-style-type: none;
-    width: 17.5%;
 }
 .menu li a{
     text-decoration: none;
-    color: #EBC781;
     font-size: 24px;
-
 }
-.menu1 {
+.menu1{
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    
 }
-.account{
-    display: flex;
-    font-size: 20px;
-    background: #EBC781;
-    width: 17%;
-    height: 43px;
-    align-items: center;
-    justify-content: center;
+.link , .link_activ{
+    width: 20%;
+    text-align: center;
 }
-.account li a{
-    font-size: 20px;
-    color: black;
-    margin: 0 5px 0 5px;
-}
-.account li a:hover{
+.link_activ a{
     color: #FF6B00;
 }
+.link a{
+    color: #EBC781;
+}
+.login{
+    display: flex;
+    width: 17%;
+    margin: 0 3% 0 0;
+    background: #EBC781;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+}
+.login li a{
+    color: black;
+    font-size: 18px;
+    margin: 0 5px 0 5px;
+}
+.login li a:hover{
+ color: #FF6B00;
+}
+
+
+
+
 
 
 
