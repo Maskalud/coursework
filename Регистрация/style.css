@@ -118,7 +118,7 @@ body.noscroll{
     width: 100%;
     height: auto;
 }
-.block1, .block2{
+.block1{
     margin: 0;
     padding: 30px 2% 30px 2%;
     width: 100%;
@@ -128,13 +128,56 @@ body.noscroll{
     font-size: 24px;
 }
 .block1 h1{margin-bottom: 30px;}
-.block1 img {
-    width: 100%;
-    border-radius: 10px;
+.block1 p {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
-.block2{margin-top: 50px;}
-.block2 p {
-    margin-top: 30px;
+.input1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.input1 input{
+    width: 47%;
+    padding: 10px 20px 10px 20px;
+    border:2px #0F2F18 solid;
+    background-color: #EBC781;
+    color: #0F2F18;
+    outline: none;
+}
+.input1 input::placeholder{
+    color: #0F2F18;
+}
+.button1{
+    display: flex;
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+.button{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    border: 3px solid #0F2F18;
+    background-color: #0F2F18;
+    color: #EBC781;
+    cursor: pointer;
+    width: 100%;
+    font-size: 24px;
+}
+.link3{
+    display: flex;
+    width: 100%;
+}
+.link3 p{
+    margin: 0 20px 0 0;
+}
+.link3 a{
+    text-decoration: none;
+    color: #FF6B00;
     font-size: 24px;
 }
 
@@ -300,7 +343,9 @@ body.noscroll{
     .block1, .block2{
         padding: 30px 5% 30px 5%;
     }
-    
+    .button {
+        padding: 20px 0 5px 0;
+    }
 
 
 
@@ -358,5 +403,16 @@ body.noscroll{
     
     .content h1{font-size: 24px;}
     .content p {font-size: 16px;}
-
+    .link3 a{font-size: 16px;}
+    .input1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .input1 input{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
 }

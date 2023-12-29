@@ -3,58 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header {
-    margin: 0;
-    padding: 10px 5% 10px 5% ;
-    font-size: 24px;
-    color: #EBC781;
+body{
     width: 100%;
-    background: #0F2F18;
-    display: flex;
-    align-items: center;
-
-}
-.logo {
-    width: 10%;
-}
-.pages{
-    width: 70%;
-    display: flex;
-}
-.link , .link_active {
- margin: 1%;
- width: 25%;
- text-align: center;
-}
-.account{
-    width: 17%;
-    height: 43px;
-    padding: 0 0 0 0.5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    background-color: #EBC781;
+    background-color: #334b39;
+}
+body.noscroll{
+    overflow: hidden;
+}
+.site{
+    width: 100%;
+    max-width: 2500px;
     
 }
-.account_link {
- margin: 0 5% 0 0;
+.header {
+    margin: 0;
+    color: #EBC781;
+    width: 100%;
+    padding: 10px 5% 10px 5% ;
+    height: 75px;
+    background: #0F2F18;
+    display: flex;
+    align-items: center;
 }
-.link a, .link_active a, .account_link a{
+.header_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 10%;
+    height: auto;
+}
+.logo img{
+    width: 55%;
+}
+.menu{
+    width: 87%;
+}
+.navbar_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.hamb, .popup{
+    display: none;
+}
+.menu li {
+	list-style-type: none;
+    line-height: 0;
+}
+.menu li a{
     text-decoration: none;
+    font-size: 20px;
 }
-.link a{color:#EBC781;}
-.link_active a{color: #FF6B00;}
-.account_link a{color: #000;}
-.personal_account{
-    width: 3%;
-    margin: 0 0 0 1%;   
+.menu1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
 }
+.link {
+    width: 20%;
+    text-align: center;
+}
+.link a{
+    color: #EBC781;
+}
+.link a:hover{
+    color: #FF6B00;
+}
+.login{
+    display: flex;
+    width: 17%;
+    margin: 0 3% 0 0;
+    background: #EBC781;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 43px;
+}
+.login li {
+    width: 50%;
+    margin: 0 4% 0 0;
+}
+
+.login li a{
+    color: black;
+    font-size: 12px;
+    margin: 0 5px 0 5px;
+}
+.entrance{
+    width: 30%;
+}
+.login li a:hover{
+    color: #505050;
+}
+
 .line{
     width: 100%;
     height: 4px;
     background:#EBC781;
 }
+
+
+
+
+
 .content{
     margin: 0;
     padding: 50px 5% 50px 5%;
@@ -62,7 +118,7 @@
     width: 100%;
     height: auto;
 }
-.block1, .block2 , .block3{
+.block1, .block2 , .block3 , .block4{
     margin: 0;
     padding: 20px 2% 20px 2%;
     width: 100%;
@@ -70,28 +126,108 @@
     background-color: #EBC781;
     border-radius: 20px;
 }
+.block1{
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 2px;
+    padding: 20px 2% 10px 2%;
+}
 .block1 *{
     margin: 10px 0 10px 0 ;
 }
-.block1 img {
-    border-radius: 20px;
+.block2{
+    border-radius: 0 0 20px 20px;
 }
-.block1 p ,.block2 p{
-    text-align: center;
-    font-size: 24px;
-    margin-top: 30px;
+.block3, .block4{margin-top: 50px;}
+.block1 input{
+    border: #0F2F18;
+    background-color: #0F2F18;
+    color: #EBC781;
+    padding: 5px;
 }
-.block2, .block3{margin-top: 50px;}
-.block3 p{
-    margin: 30px 0 30px 0;
-}
-.block3 iframe{
+.ticket{
     width: 100%;
-    height: 600px;
+    height: auto;
+    padding: 15px 2% 15px 2%;
+    background-color: #0F2F18;
+    border-radius: 15px;
+    color: #EBC781;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
-.block3 iframe{
-    border-radius: 20px;
+.time {
+    display: flex;
+    color: #FF6B00;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
+.time p{margin: 0 10px 0 0;}
+.description{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.description2{
+    width: 400px;
+    margin: 0 10px 0 0 ;
+}
+
+.button1{
+    width: 100%;
+}
+
+.button{
+    border-radius: 5px ;
+    background-color: #EBC781;
+    padding: 5px;
+    border-color: #EBC781;
+    cursor:pointer;
+    width: 15%;
+    text-align:center;
+}
+.block3 p {
+    font-size: 24px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+}
+.block3 h1, .block4 h1{
+    margin-bottom: 50px;
+}
+.block4 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.block4 form input, .block4 form textarea{
+    background-color: #EBC781;
+    border: 2px solid #0F2F18;
+    width: 50%;
+    padding: 10px 0 10px 20px;
+    outline: none;
+    color: #0F2F18;
+    margin-bottom: 20px;
+}
+.block4 form input::placeholder, .block4 form textarea::placeholder{
+    color: #0F2F18;
+}
+.block4 form textarea{
+    height: 100px;
+    resize: none;
+}
+.button3{
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    background: #0F2F18;
+    border-radius: 10px;
+    color: #EBC781;
+}
+
+
+
+
+
 .footer{
     margin: 0;
     padding: 20px 5% 20px 5%;
@@ -122,6 +258,17 @@
     font-size: 24px;
     text-align: end;
 }
+.contacts{
+    display: flex;
+    flex-direction: column;
+
+}
+.contacts div:last-of-type {
+    margin-top: auto;
+  }
+.contacts1 div:last-of-type{
+    margin-left: auto;
+}
 .link_footer{width: 30%;}
 .contacts {width: 70%;}
 .contacts2{
@@ -131,7 +278,193 @@
 .social_network{
     width: 5%;
 }
-
-@media screen and (max-width: 1000px){
+.social_network a img{
+    width: 60px;
+}
+@media screen and (max-width: 1280px){
+    .header{
+        height: 60px;
+    }
+    .navbar_wrap .menu1{
+        display: none;
+    }
+    .hamb{
+        display: flex;
+        align-items: center;
+    }
+    .hamb_field{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        margin: 6px auto;
+        background-color: #EBC781;
+        transition: 0.2s;
+    }
     
+    .popup{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color:#0F2F18;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+    .popup.open{
+        left: 0;
+    }
+    .hamb_field.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamb_field.active .bar:nth-child(1){
+        transform: translateY(8.8px) rotate(45deg);
+    }
+    .hamb_field.active .bar:nth-child(3){
+        transform: translateY(-8.8px) rotate(-45deg);
+    }
+    .menu1{
+        flex-direction: column;
+        overflow: auto;
+    }
+    .link a{
+        color: #EBC781;
+    }
+    .login {
+        background-color:#0F2F18;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 10px 0 ;
+    }
+    .link{
+        width: 100%;
+        margin: 10px 0 10px 0 ;
+    }
+    .link a{
+        font-size: 16px;
+    }
+    .login li {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px 0;
+        color: #EBC781;
+    }
+    .login li a {
+        font-size: 20px;
+        color: #EBC781;
+
+    }
+    .login li a:hover{
+        color:#FF6B00;
+    }
+    .menu li a{
+        font-size: 20px;
+    }
+    .menu{
+        width: auto;
+        margin: 0 3% 0 auto;
+    }
+    .menu li {
+        line-height: normal;
+    }
+    .profile a svg{
+        width: 70%;
+    }
+    .logo img{
+        height: 50px;
+        width: auto;
+    }
+
+
+
+    .block1, .block2 , .block3{
+        padding: 30px 4% 30px 4%;
+    }
+    .description{
+        flex-direction: column;
+    }
+    .description2{
+        width: 100%;
+        margin:0 0 30px 0 ;
+    }
+    .button1{
+        text-align: center;
+        margin: 40px 0 20px 0;
+    }
+    .button{
+        width: 23%;
+        padding: 15px 5px 15px 5px;
+    }
+    .block4 form input, .block4 form textarea{;
+        width: 100%;
+    }
+
+
+
+
+    .lyceum{
+        font-size: 16px;
+        
+    }
+    .link_footer h1, .contacts2 h1{
+        font-size: 24px;
+        margin: 0 0 10px 0;
+    }
+    .link_footer1{
+        margin: 10px 0 10px 0;
+    }
+    .link_footer1 a{
+        font-size: 20px;
+    }
+    .contacts2 a{
+        font-size: 20px;
+    }
+    .contacts2{
+        width: 90%;
+    }
+    .social_network{
+        width: 10%;
+    }
+    .social_network a img{
+        width: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+    }
+    .contacts{
+        width: 100%;
+    }
+    .contacts1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contacts2{
+        width: 80%;
+    }
+    .social_network{
+        width: 10%;
+    }
+    .link_footer1{
+        margin: 15px 0 15px 0;
+    }
+
+
+
+
+    .button{
+        width: 100%;
+        padding: 30px 0 30px 0;
+        font-size: 20px;
+    }
+    .ticket{
+        padding: 20px;
+    }
 }

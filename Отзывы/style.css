@@ -127,15 +127,90 @@ body.noscroll{
     border-radius: 20px;
     font-size: 24px;
 }
-.block1 h1{margin-bottom: 30px;}
-.block1 img {
+.block1 h1, .block2 h2{margin-bottom: 30px;}
+.block1 textarea{
+    resize: none;
+    border:2px #0F2F18 solid;
+    background-color: #EBC781;
+    color: #0F2F18;
     width: 100%;
+    padding: 10px;
+    height: 300px;
+    margin-bottom: 20px;
+    outline: none;
+    
+}
+.block1 textarea::placeholder, .block1 input::placeholder{
+    color: #0F2F18;
+}
+.block1 input{
+    border:2px #0F2F18 solid;
+    background-color: #EBC781;
+    color: #0F2F18;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.button1{
+    display: flex;
+    width: 100%;
+}
+.button{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    border: 3px solid #0F2F18;
     border-radius: 10px;
+    background-color: #0F2F18;
+    color: #EBC781;
+    cursor: pointer;
+    margin-left: auto;
+}
+.button img{
+    margin-right: 20px;
 }
 .block2{margin-top: 50px;}
-.block2 p {
-    margin-top: 30px;
-    font-size: 24px;
+
+.ot{
+    width: 100%;
+    background-color: #0F2F18;
+    padding: 20px 2% 20px 2%;
+    color: #EBC781;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.ot2{
+    width: 100%;
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+.prof{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px 0 0;
+    width: 10%;
+}
+.neme{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0F2F18;
+    width: 100%;
+    text-align: center;
+}
+.textt{
+    resize: none;
+    border:none;
+    background-color: #EBC781;
+    color: #000000;
+    width: 90%;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 20px;
+    outline: none;
 }
 
 
@@ -300,7 +375,14 @@ body.noscroll{
     .block1, .block2{
         padding: 30px 5% 30px 5%;
     }
-    
+    .prof{
+        padding: 0 0 0 0;
+        width: 20%;
+    }
+    .textt{width: 80%;}
+
+
+
 
 
 
@@ -359,4 +441,23 @@ body.noscroll{
     .content h1{font-size: 24px;}
     .content p {font-size: 16px;}
 
+    .ot2{
+        flex-direction: column;
+    }
+    .prof{
+        padding: 0 0 0 0;
+        width: 100%;
+    }
+    .textt{width: 100%;}
+    .ot{
+        padding: 20px;
+    }
+    .prof{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .prof input{
+        width: 30%;
+    }
 }

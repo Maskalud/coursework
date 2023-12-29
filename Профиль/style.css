@@ -118,25 +118,57 @@ body.noscroll{
     width: 100%;
     height: auto;
 }
-.block1, .block2{
+.block1{
     margin: 0;
-    padding: 30px 2% 30px 2%;
+    padding: 30px 6% 30px 6%;
     width: 100%;
     height: auto;
     background-color: #EBC781;
     border-radius: 20px;
     font-size: 24px;
 }
-.block1 h1{margin-bottom: 30px;}
-.block1 img {
-    width: 100%;
-    border-radius: 10px;
+.block1 h1{
+    margin-bottom: 30px;
+    text-align: center;
 }
-.block2{margin-top: 50px;}
-.block2 p {
-    margin-top: 30px;
+.block1 p {
     font-size: 24px;
+    margin: 0;
 }
+.date{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.date2 {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.date2 p{
+    width: 20%;
+    color: #0F2F18;
+}
+.conclusion{
+    width: 40%;
+}
+.conclusion input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #0F2F18;
+    background-color: #EBC781;
+    outline: none;
+    color: #0F2F18;
+    font-size: 20px;
+}
+.conclusion input::placeholder{color: #0F2F18;}
+
 
 
 
@@ -300,8 +332,15 @@ body.noscroll{
     .block1, .block2{
         padding: 30px 5% 30px 5%;
     }
-    
-
+    .date2 p {
+        width: 30%;
+    }
+    .conclusion{
+        width: 70%;
+    }
+    .conclusion input{
+        font-size: 16px;
+    }
 
 
 
@@ -358,5 +397,15 @@ body.noscroll{
     
     .content h1{font-size: 24px;}
     .content p {font-size: 16px;}
-
+    .link3 a{font-size: 16px;}
+    .input1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .input1 input{
+        margin: 10px 0 10px 0;
+    }
 }

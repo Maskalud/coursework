@@ -25,10 +25,10 @@
                                 </div>
                             </div>
                             <ul class="menu1" id="menu1"> 
-                                <li class="link"><a href="index.html">ГЛАВНАЯ</a></li>
+                                <li class="link"><a href="../Главная/index.html">ГЛАВНАЯ</a></li>
                                 <li class="link"><a href="../Билеты/index.html">БИЛЕТЫ</a></li>
                                 <li class="link"><a href="../Карта зоопарка/index.html">КАРТА ЗООПАРКА</a></li>
-                                <li class="link"><a href="../Галерея/index.php">ГАЛЕРЕЯ</a></li>
+                                <li class="link"><a href="index.php">ГАЛЕРЕЯ</a></li>
                                 <div class="login">
                                     <li class="entrance"><a href="../Вход/index.php">ВОЙТИ</a></li>
                                     <li><a href="../Регистрация/index.php">РЕГИСТРАЦИЯ</a></li>
@@ -49,31 +49,35 @@
         <div class="line"></div>
         <div class="content">
             <div class="block1">
-                <h1>Фото входа в зоопарк</h1>
-                <img src="../img/image 1.png" width="100%">
-                <h1>О зоопарке</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h1>Фотографии зоопарка</h1>
+                <div class="img">
+                    <img src="../img/image 1.png" >
+                    <img src="../img/i 5.png" >
+                    <img src="../img/image 1.png" >
+                    <img src="../img/i 5.png" >
+                    <img src="../img/image 1.png" >
+                    <img src="../img/i 5.png" >
+                </div>
             </div>
             <div class="block2">
-                <h1>История создания</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </p>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua.</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="block3">
-                <h1>Где располагается зоопарк</h1>
-                <p>Адрес: Рязань ул.Пушкина 123</p>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a10cf33babb65674a3f33eb2f66e3023f70324e07443ee4d273823384a100ee&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+                <h1>Фотографии животных </h1>
+                <div class="img">
+                    <img src="../img/i 1.png" >
+                    <img src="../img/i 2.png" >
+                    <img src="../img/i 1.png" >
+                    <img src="../img/i 2.png" >
+                    <img src="../img/i 1.png" >
+                    <img src="../img/i 2.png" >
+                </div>
             </div>
         </div>
         <div class="line"></div>
         <div class="footer">
             <div class="link_footer">
                 <h1>Ссылки:</h1>
+                <div class="link_footer1"><a href="../Главная/index.html">Главная</a></div>
                 <div class="link_footer1"><a href="../Билеты/index.html">Билеты</a></div>
                 <div class="link_footer1"><a href="../Карта зоопарка/index.html">Катра зоопарка</a></div>
-                <div class="link_footer1"><a href="../Галерея/index.php">Галерея</a></div>
                 <div class="link_footer1"><a href="../Отзывы/index.php">Отзывы</a></div>
             </div>
             <div class="contacts">

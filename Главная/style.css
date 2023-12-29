@@ -10,6 +10,9 @@ body{
     justify-content: center;
     background-color: #334b39;
 }
+body.noscroll{
+    overflow: hidden;
+}
 .site{
     width: 100%;
     max-width: 2500px;
@@ -17,27 +20,43 @@ body{
 }
 .header {
     margin: 0;
-    padding: 10px 5% 10px 5% ;
-    font-size: 24px;
     color: #EBC781;
     width: 100%;
+    padding: 10px 5% 10px 5% ;
+    height: 75px;
     background: #0F2F18;
     display: flex;
     align-items: center;
-
+}
+.header_content{
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .logo {
     width: 10%;
+    height: auto;
+}
+.logo img{
+    width: 55%;
 }
 .menu{
     width: 87%;
 }
+.navbar_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.hamb, .popup{
+    display: none;
+}
 .menu li {
 	list-style-type: none;
+    line-height: 0;
 }
 .menu li a{
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
 }
 .menu1{
     display: flex;
@@ -45,15 +64,15 @@ body{
     align-items: center;
     
 }
-.link , .link_activ{
+.link {
     width: 20%;
     text-align: center;
 }
-.link_activ a{
-    color: #FF6B00;
-}
 .link a{
     color: #EBC781;
+}
+.link a:hover{
+    color: #FF6B00;
 }
 .login{
     display: flex;
@@ -62,24 +81,25 @@ body{
     background: #EBC781;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 43px;
 }
+.login li {
+    width: 50%;
+    margin: 0 4% 0 0;
+}
+
 .login li a{
     color: black;
-    font-size: 18px;
+    font-size: 12px;
     margin: 0 5px 0 5px;
 }
-.login li a:hover{
- color: #FF6B00;
+.entrance{
+    width: 30%;
 }
-
-
-
-
-
-
-
-
+.login li a:hover{
+    color: #505050;
+}
 
 .line{
     width: 100%;
@@ -141,7 +161,6 @@ body{
 }
 .contacts1{
     display: flex;
-
 }
 .contacts2 a {
     text-decoration: none;
@@ -153,16 +172,174 @@ body{
     font-size: 24px;
     text-align: end;
 }
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+.contacts div:last-of-type {
+    margin-top: auto;
+  }
+.contacts1 div:last-of-type{
+    margin-left: auto;
+}
 .link_footer{width: 30%;}
 .contacts {width: 70%;}
-.contacts2{
-    width: 95%;
-    
-}
-.social_network{
-    width: 5%;
-}
+.contacts2{width: 95%; }
+.social_network{width: 5%;}
+.social_network a img{width: 60px;}
+@media screen and (max-width: 1280px){
+    .header{
+        height: 60px;
+    }
+    .navbar_wrap .menu1{
+        display: none;
+    }
+    .hamb{
+        display: flex;
+        align-items: center;
+    }
+    .hamb_field{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        border-radius: 10px;
+        margin: 6px auto;
+        background-color: #EBC781;
+        transition: 0.2s;
+    }
+    .popup{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color:#0F2F18;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+    }
+    .popup.open{
+        left: 0;
+    }
+    .hamb_field.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamb_field.active .bar:nth-child(1){
+        transform: translateY(8.8px) rotate(45deg);
+    }
+    .hamb_field.active .bar:nth-child(3){
+        transform: translateY(-8.8px) rotate(-45deg);
+    }
+    .menu1{
+        flex-direction: column;
+        overflow: auto;
+    }
+    .link a{
+        color: #EBC781;
+    }
+    .login {
+        background-color:#0F2F18;
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 10px 0 ;
+    }
+    .link{
+        width: 100%;
+        margin: 10px 0 10px 0 ;
+    }
+    .link a{
+        font-size: 16px;
+    }
+    .login li {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px 0;
+        color: #EBC781;
+    }
+    .login li a {
+        font-size: 20px;
+        color: #EBC781;
 
-@media screen and (max-width: 1000px){
-    
+    }
+    .login li a:hover{
+        color:#FF6B00;
+    }
+    .menu li a{
+        font-size: 20px;
+    }
+    .menu{
+        width: auto;
+        margin: 0 3% 0 auto;
+    }
+    .menu li {
+        line-height: normal;
+    }
+    .profile a svg{
+        width: 70%;
+    }
+    .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .content h1 {
+        font-size: 24px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .block3 iframe{
+        width: 100%;
+        height: 400px;
+    }
+    .lyceum{
+        font-size: 16px;
+        
+    }
+    .link_footer h1, .contacts2 h1{
+        font-size: 24px;
+        margin: 0 0 10px 0;
+    }
+    .link_footer1{
+        margin: 10px 0 10px 0;
+    }
+    .link_footer1 a{
+        font-size: 20px;
+    }
+    .contacts2 a{
+        font-size: 20px;
+    }
+    .contacts2{
+        width: 90%;
+    }
+    .social_network{
+        width: 10%;
+    }
+    .social_network a img{
+        width: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+    }
+    .contacts{
+        width: 100%;
+    }
+    .contacts1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contacts2{
+        width: 80%;
+    }
+    .social_network{
+        width: 10%;
+    }
+    .link_footer1{
+        margin: 15px 0 15px 0;
+    }
 }
